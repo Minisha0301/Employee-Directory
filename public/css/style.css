@@ -2,42 +2,36 @@
         background: #F4F4F4;
     }
 
-    .logo{
+    /* .logo{
         margin-top: 20px;
-    }
+    } */
+    
     .sidemenu{
-        /* z-index: 3; */
-        height: 100vh;
+        height: 90vh;
     }
     .sidemenu.card-box {
-        /* background: #D1D9FF; */
         background: black;
-
+    }
+    .card-head{
+        padding: 0.5em;
     }
 
     .main{
         background: white;
-        min-height: 60%;
-        /* background: #F5F5F5; */
+        min-height: 600px;
     }
 
     .head{
         height: 15%;
     }
 
-   
-
     .card-box, .card {
-    /* width: 300px; */
-    /* min-height: 160px;s */
-    background: #fff;
-    box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0);
-    border-radius: 12px;
-    /* margin: 16px; */
-    padding: 1.5em;
-    flex-direction: column;
-    /* justify-content: space-around; */
-    gap: 1.2em;
+        background: #fff;
+        box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0);
+        border-radius: 12px;
+        padding: 1.5em;
+        flex-direction: column;
+        gap: 1.2em;
     }
 
 
@@ -58,18 +52,6 @@
     }
 
     .search-prompt {
-        /* border: none;
-        outline: none;
-        float: left;
-        margin-top: auto;
-        margin-right: auto;
-        margin-bottom: auto;
-        margin-left: 20px;
-        line-height: 31px;
-        font-size: 16px;
-        font-family: arial, sans-serif;
-        width: 78%; */
-
         border: none;
         outline: none;
         float: left;
@@ -81,7 +63,6 @@
         font-size: 16px;
         font-family: arial, sans-serif;
         width: 90%;
-        /* background: red; */
         position: absolute;
 
      }
@@ -94,8 +75,17 @@
         font-size: 14px;
 
      }
-     #employeeCards {
-        display: flex;
-        flex-wrap: wrap;
-    }
     
+    .msg, .notAvailable{
+        margin-top:10%;
+        text-align: center;
+    }
+
+
+    
+
+    @media only screen and (max-width: 768px) {
+        .sidemenu {
+          display: none;
+        }
+    }

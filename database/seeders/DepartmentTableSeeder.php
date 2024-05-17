@@ -16,7 +16,6 @@ class DepartmentTableSeeder extends Seeder
         $departments =[
             'Software Development',
             'Network Engineering',
-            'Database Administration',
             'Cybersecurity',
             'IT Support',
             'Web Development'
